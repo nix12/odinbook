@@ -25,7 +25,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'foundation-rails'
 gem 'slim-rails'
-gem 'erb2slim'
 gem 'devise'
 
 # Use ActiveModel has_secure_password
