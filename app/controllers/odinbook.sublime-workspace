@@ -520,37 +520,35 @@
 	"buffers":
 	[
 		{
-			"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/test_helper.rb",
-			"settings":
-			{
-				"buffer_size": 366,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/Gemfile",
-			"settings":
-			{
-				"buffer_size": 1611,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/registrations/new.html.slim",
-			"settings":
-			{
-				"buffer_size": 755,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "application_controller.rb",
 			"settings":
 			{
-				"buffer_size": 350,
+				"buffer_size": 418,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1733,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "users_controller.rb",
+			"settings":
+			{
+				"buffer_size": 98,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "registrations_controller.rb",
+			"settings":
+			{
+				"buffer_size": 145,
 				"line_ending": "Unix"
 			}
 		}
@@ -600,20 +598,28 @@
 	[
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/registrations"
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views"
 	],
 	"file_history":
 	[
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/registration_controller.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/static_pages_controller.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/user_controller.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/test_helper.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/Gemfile",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/registrations/new.html.slim",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/application_controller.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/routes.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/static_pages/home.html.slim",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/secrets.yml",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/lib/assets/.keep",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/sessions/new.html.slim",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/README.md",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/layouts/application.html.erb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/environments/development.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/layouts/application.html.slim",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/registrations/new.html.slim",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/db/migrate/20161123164359_add_fields_to_users.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/routes.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/registrations/registrations_controller.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/registrations/new.html.erb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/models/user_test.rb",
@@ -724,15 +730,7 @@
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/app/models/user.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/app/models/post.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/config/routes.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/app/controllers/posts_controller.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/log/development.log",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/app/views/posts/new.html.slim",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/app/views/sessions/new.html.slim",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/app/controllers/sessions_controller.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/app/views/layouts/_header.html.slim",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/app/views/posts/index.html.slim",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/db/migrate/20161111085923_add_references_to_post.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/app/helpers/sessions_helper.rb"
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/app/controllers/posts_controller.rb"
 	],
 	"find":
 	{
@@ -780,88 +778,30 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/test_helper.rb",
+					"file": "application_controller.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 366,
+						"buffer_size": 418,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/Gemfile",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1611,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								927,
-								927
+								404,
+								404
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
 							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
-						},
-						"translation.x": -0.0,
-						"translation.y": 223.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/registrations/new.html.slim",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 755,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								271,
-								271
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -871,20 +811,51 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "application_controller.rb",
+					"buffer": 1,
+					"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/routes.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 350,
+						"buffer_size": 1733,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								338,
-								338
+								92,
+								92
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "users_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 98,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								47,
+								47
 							]
 						],
 						"settings":
@@ -898,6 +869,35 @@
 					},
 					"stack_index": 0,
 					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "registrations_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 145,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
 				}
 			]
 		}
@@ -908,7 +908,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"layout":
 	{
@@ -981,9 +981,9 @@
 	},
 	"show_minimap": false,
 	"show_open_files": false,
-	"show_tabs": false,
+	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 176.0,
+	"side_bar_width": 207.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
