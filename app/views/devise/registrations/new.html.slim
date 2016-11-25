@@ -1,9 +1,9 @@
-h2
-  | Sign up
 .row
-  .medium-t.columns  
+  .medium-4.columns.float-left
+    h3.center Sign up 
     = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-      = devise_error_messages!
+      .alert 
+        = devise_error_messages!
       .field
         = f.label :first_name
         br
@@ -30,5 +30,4 @@ h2
         br
         = f.password_field :password_confirmation, autocomplete: "off"
       .actions
-        = f.submit "Sign up"
-    = render "devise/shared/links"
+        = f.submit "Sign up", class: 'button expanded'
