@@ -15,7 +15,7 @@ ul.ui.menu
 	      li.item
 	      	= link_to 'About', '#'
 	      li.item
-	        = link_to 'Sign out', destroy_user_session_path(current_user), method: :delete
+	        = link_to 'Sign out', destroy_user_session_path, method: :delete
 	- else
 		li.item 
 			= link_to 'Sign up', new_user_registration_path
