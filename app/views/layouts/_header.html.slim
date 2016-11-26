@@ -15,9 +15,11 @@ ul.ui.menu
 	      li.item
 	      	= link_to 'About', '#'
 	      li.item
-	        = link_to 'Sign out', destroy_user_session_path, method: :delete
+	        = link_to 'Sign out', destroy_user_session_path(current_user), method: :delete
 	- else
 		li.item 
 			= link_to 'Sign up', new_user_registration_path
 		li.item
 			= link_to 'Sign in', new_user_session_path
+		li.item
+			= link_to 'Facebook sign in', user_facebook_omniauth_authorize_path
