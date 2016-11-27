@@ -32,6 +32,7 @@ gem 'jquery-turbolinks'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'figaro'
+gem 'thor', '0.19.1'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
