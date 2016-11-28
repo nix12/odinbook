@@ -1,5 +1,5 @@
 ul.ui.menu
-	- if user_signed_in?
+	- if user_signed_in? || !current_user.nil?
 	  li.item
 	    = link_to 'Profile', user_path(current_user)
 	  li.item
