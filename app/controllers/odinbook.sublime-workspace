@@ -4,6 +4,82 @@
 		"selected_items":
 		[
 			[
+				"po",
+				"post"
+			],
+			[
+				"t",
+				"txt_en_small\tilorem_txt_en_small"
+			],
+			[
+				"ass",
+				"assert_not"
+			],
+			[
+				"p",
+				"post"
+			],
+			[
+				"tx",
+				"txt_en_big\tilorem_txt_en_big"
+			],
+			[
+				"txt_en",
+				"txt_en_small\tilorem_txt_en_small"
+			],
+			[
+				"as",
+				"assert_template"
+			],
+			[
+				"ses",
+				"session"
+			],
+			[
+				"use",
+				"user_session_path"
+			],
+			[
+				"sess",
+				"sessions"
+			],
+			[
+				"pass",
+				"password_confirmation"
+			],
+			[
+				"user",
+				"user_registration_path"
+			],
+			[
+				"en",
+				"encrypted_password"
+			],
+			[
+				"vali",
+				"validates"
+			],
+			[
+				"resou",
+				"resources"
+			],
+			[
+				"g",
+				"gem"
+			],
+			[
+				"in",
+				"input-group-field"
+			],
+			[
+				"input",
+				"input-group-label"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
 				"re",
 				"registrations"
 			],
@@ -80,10 +156,6 @@
 				"to_i"
 			],
 			[
-				"pass",
-				"passenger"
-			],
-			[
 				"passe",
 				"passengers"
 			],
@@ -144,14 +216,6 @@
 				"class_name"
 			],
 			[
-				"mar",
-				"margin-top"
-			],
-			[
-				"in",
-				"inline"
-			],
-			[
 				"require",
 				"require_login"
 			],
@@ -160,24 +224,12 @@
 				"logged_in"
 			],
 			[
-				"user",
-				"user_id"
-			],
-			[
 				"tex",
 				"text-decoration"
 			],
 			[
 				"pos",
 				"post_params"
-			],
-			[
-				"po",
-				"posts"
-			],
-			[
-				"use",
-				"user_id"
 			],
 			[
 				"remem",
@@ -208,10 +260,6 @@
 				"duplicate_user"
 			],
 			[
-				"ass",
-				"assert_not"
-			],
-			[
 				"foll",
 				"following_ids"
 			],
@@ -234,10 +282,6 @@
 			[
 				"assert",
 				"assert_difference"
-			],
-			[
-				"as",
-				"assert_redirected_to"
 			],
 			[
 				"fol",
@@ -470,60 +514,17 @@
 			[
 				"us",
 				"user_id"
-			],
-			[
-				"reme",
-				"remember_digest"
-			],
-			[
-				"P",
-				"Password"
-			],
-			[
-				"remeb",
-				"remember_token"
-			],
-			[
-				"update_a",
-				"update_attributes〔function〕"
-			],
-			[
-				"follow",
-				"follow_redirect"
-			],
-			[
-				"logout",
-				"logout_path"
-			],
-			[
-				"ses",
-				"session"
-			],
-			[
-				"login",
-				"login_path"
-			],
-			[
-				"lin",
-				"link_to"
-			],
-			[
-				"sess",
-				"sessions"
-			],
-			[
-				"ad",
-				"addEventListener"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "application_controller.rb",
+			"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/models/post_test.rb",
 			"settings":
 			{
-				"buffer_size": 418,
+				"buffer_size": 465,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +532,17 @@
 			"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 1733,
+				"buffer_size": 1872,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/models/user.rb",
+			"settings":
+			{
+				"buffer_size": 1472,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -539,16 +550,26 @@
 			"file": "users_controller.rb",
 			"settings":
 			{
-				"buffer_size": 98,
+				"buffer_size": 152,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "registrations_controller.rb",
+			"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/users/show.html.slim",
 			"settings":
 			{
-				"buffer_size": 145,
+				"buffer_size": 150,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/models/post.rb",
+			"settings":
+			{
+				"buffer_size": 119,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -560,10 +581,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 138.0,
-		"last_filter": "vm",
+		"height": 201.0,
+		"last_filter": "instal",
 		"selected_items":
 		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
 			[
 				"vm",
 				"View: Toggle Menu"
@@ -573,7 +598,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 485.0
+		"width": 593.0
 	},
 	"console":
 	{
@@ -599,31 +624,72 @@
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views"
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/registrations",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/users",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/lib",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/controllers",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/fixtures",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/models",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/tmp"
 	],
 	"file_history":
 	[
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/registration_controller.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/static_pages_controller.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/user_controller.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/fixtures/posts.yml",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/models/post_test.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/models/user_test.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/test_helper.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/Gemfile",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/registrations/new.html.slim",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/fixtures/users.yml",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/integration/users_signin_test.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/registrations_controller.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/controllers/users_controller_test.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/application_controller.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/integration/users_signup_test.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/routes.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/models/user.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/controllers/static_pages_controller_test.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/initializers/backtrace_silencers.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/Gemfile",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/users/omniauth_callbacks_controller.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/initializers/devise.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/layouts/_header.html.slim",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/users/sessions_controller.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/helpers/application_helper.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/sessions/new.html.slim",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/application.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/.gitignore",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/.env",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/config/application.yml",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/Rakefile",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/users_controller.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/assets/javascripts/application.js",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/layouts/application.html.slim",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/assets/stylesheets/application.css",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/registrations/new.html.slim",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/registrations/edit.html.slim",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/initializers/omniauth.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/users/show.html.slim",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/shared/_links.html.slim",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/assets/stylesheets/custom.css.scss",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/assets/stylesheets/purecss.css",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/assets/stylesheets/foundation_and_overrides.scss",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/passwords/edit.html.slim",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/static_pages_controller.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/user/show.html.slim",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/user_controller.rb",
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/registration_controller.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/static_pages/home.html.slim",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/secrets.yml",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/lib/assets/.keep",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/sessions/new.html.slim",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/README.md",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/layouts/application.html.erb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/environments/development.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/layouts/application.html.slim",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/db/migrate/20161123164359_add_fields_to_users.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/controllers/registrations/registrations_controller.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/devise/registrations/new.html.erb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/models/user_test.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/models/user.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/db/migrate/20161123122252_add_email_to_users.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/config/database.yml",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odin-flight-booker/Gemfile",
@@ -699,38 +765,7 @@
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/views/events/index.html.slim",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/controllers/users_controller.rb",
 		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/helpers/sessions_helper.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/views/users/show.html.slim",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/views/layouts/_header.html.slim",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/views/events/new.html.slim",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/assets/stylesheets/custom.css.scss",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/db/schema.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/views/users/new.html.slim",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/db/migrate/20161114052258_remove_time_from_events.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/db/migrate/20161113081334_create_events.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/db/migrate/20161114052442_remove_date_from_events.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/db/migrate/20161114053057_add_date_to_events.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/db/migrate/20161114052737_event.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/db/migrate/20161113233634_create_event_attendences.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/models/event_attendence.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/db/migrate/20161113215636_create_event_attendences.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/models/attended_event.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/views/layouts/application.html.slim",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/controllers/sessions_controller.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/config/routes.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/Gemfile",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/db/migrate/20161113090932_add_creator_id_to_events.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/models/attendance.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/views/sessions/new.html.slim",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/controllers/application_controller.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/helpers/application_helper.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/assets/stylesheets/application.css",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/README.md",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/test/models/user_test.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/Gemfile",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/app/models/user.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/app/models/post.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/config/routes.rb",
-		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/members-only/app/controllers/posts_controller.rb"
+		"/home/linuxbox/Odin_Project/3_Ruby_on_Rails/private-events/app/views/users/show.html.slim"
 	],
 	"find":
 	{
@@ -748,6 +783,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"devise",
 			"erb2slim",
 			"booking",
 			"]\n",
@@ -778,24 +814,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application_controller.rb",
+					"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/test/models/post_test.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 418,
+						"buffer_size": 465,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								404,
-								404
+								454,
+								454
 							]
 						],
 						"settings":
@@ -807,7 +843,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -816,15 +852,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1733,
+						"buffer_size": 1872,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								92,
-								92
+								296,
+								296
 							]
 						],
 						"settings":
@@ -838,24 +874,55 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "users_controller.rb",
+					"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/models/user.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 98,
+						"buffer_size": 1472,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								47,
-								47
+								848,
+								848
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "users_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 152,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								55,
+								55
 							]
 						],
 						"settings":
@@ -871,20 +938,49 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "registrations_controller.rb",
+					"buffer": 4,
+					"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/views/users/show.html.slim",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 145,
+						"buffer_size": 150,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								43,
+								43
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/linuxbox/Odin_Project/3_Ruby_on_Rails/odinbook/app/models/post.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								113,
+								113
 							]
 						],
 						"settings":
@@ -896,7 +992,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -959,12 +1055,12 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
@@ -983,7 +1079,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 207.0,
+	"side_bar_width": 250.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -1,7 +1,92 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
+  def setup
+  	@user = users(:thomas)
+  end
+
+  test 'should be valid' do
+  	assert @user.valid?
+  end
+
+  test 'first name is present' do
+  	@user.first_name = ' '
+  	assert_not @user.valid?
+  end
+
+  test 'first name is at least 2 characters' do
+  	@user.first_name = 'a'
+  	assert_not @user.valid?
+  end
+
+  test 'first name is a maximum of 20 characters' do
+  	@user.first_name = 'a' * 21
+  	assert_not @user.valid?
+  end
+
+  test 'last name is present' do
+  	@user.last_name = ' '
+  	assert_not @user.valid?
+  end
+
+  test 'last name is at least 2 characters' do
+  	@user.last_name = 'a'
+  	assert_not @user.valid?
+  end
+
+  test 'last name is a maximum of 20 characters' do
+  	@user.last_name = 'a' * 21
+  	assert_not @user.valid?
+  end
+
+  test 'password is present' do
+  	@user.encrypted_password = ' '
+  	assert_not @user.valid?
+  end
+
+ 	test 'password should be a minimum of 6 characters' do
+ 		@user.encrypted_password = 'a' * 5
+ 		assert_not @user.valid?
+ 	end
+
+ 	test "email should not be too long" do
+		@user.email = "a" * 244 + "@example.com"
+		assert_not @user.valid?
+	end
+
+	test "email validation should accept valid email addresses" do
+		valid_addresses = %w[user@eample.com USER@foo.COM A_US-ER@foo.bar.org first.last@foo.jp
+												alice+bob@baz.cn]
+
+		valid_addresses.each do |valid_address|
+			@user.email = valid_address
+			assert @user.valid?, "#{ valid_address.inspect } should be valid"
+		end
+	end
+
+	test "email validation should reject invalid addresses" do
+		invalid_addresses = %w[user@example,com user_at_foo.org user.name@example.
+													foo@bar_baz.com foo@bar+baz.com]
+
+		invalid_addresses.each do |invalid_address|
+			@user.email = invalid_address
+			assert_not @user.valid?, "#{ invalid_address.inspect } should be invalid"
+		end
+	end
+
+	test "email address should be saved as lower-case" do
+		mixed_case_email = "fOO@eXAMple.COm"
+		@user.email = mixed_case_email
+		@user.save
+		assert_equal mixed_case_email.downcase, @user.reload.email
+	end
+
+	test "email address should be unique" do
+		duplicate_user = @user.dup
+		duplicate_user.email = @user.email.upcase
+		@user.save
+		assert_not duplicate_user.valid?
+	end
+
 end

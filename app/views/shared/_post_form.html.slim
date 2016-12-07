@@ -1,0 +1,6 @@
+= form_for @post, url: posts_path, method: :post do |f|
+	.field.six.wide.column
+		= f.label :post
+		= f.text_area :content, rows: 6, placeholder: 'Write something'
+
+	= f.submit 'Post'

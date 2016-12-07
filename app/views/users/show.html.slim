@@ -1,3 +1,8 @@
-h1 = @user.first_name 
-br
-h1 = @user.last_name
+.ui.grid
+	.four.wide.column
+	.wall.six.wide.column
+		= paginate @feed_items
+		= render 'shared/wall'	
+
+	.post_form.center.aligned
+		= render 'shared/post_form'
