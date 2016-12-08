@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 	def index
-		@posts = current_user.posts
+		@posts = current_user.posts.order(created_at: :desc)
 	end
 
 	def create
@@ -8,10 +8,10 @@ class PostsController < ApplicationController
 
 		if @post.save
 			flash[:success] = 'Post successful'
-			redirect_to posts_path
+			redirect_to user_path(current_user)
 		else
-			flash[:danger] = 'Post unsuccessful'
-			render 'users/show'
+			flash[:error] = 'Post unsuccessful'
+			redirect_to user_path(current_user)
 		end
 	end
 

@@ -1,9 +1,9 @@
-ul.ui.menu
+ul.ui.menu.left.aligned.grid
 	- if user_signed_in? || !current_user.nil?
 	  li.item
 	    = link_to 'Profile', user_path(current_user)
 	  li.item
-	    = link_to 'Posts', '#'
+	    = link_to 'Posts', posts_path
 	  li.item
 	    = link_to 'Friends', '#'
 	  li.ui.simple.dropdown.link.item

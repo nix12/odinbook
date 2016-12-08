@@ -1,2 +1,8 @@
-= @posts.each do |item|
-	= puts item.content
+.ui.grid
+	.four.wide.column
+	.eight.wide.column
+		ul.left.aligned.grid
+			- @posts.each do |post|
+				.ui.raised.segment
+					li = "Post by #{ post.user.first_name } #{ post.user.last_name } #{time_ago_in_words(post.created_at) }"
+					li = post.content

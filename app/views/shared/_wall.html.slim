@@ -1,5 +1,7 @@
 ul
 	- @feed_items.each do |post|
 		.ui.raised.segment
-			li = "Posted by #{post.user.first_name} #{post.user.last_name} #{time_ago_in_words(Time.now)}"
-			li = post.content
+			= link_to '#' do
+				li = "Posted by #{post.user.first_name} #{post.user.last_name} #{time_ago_in_words(post.created_at) }"
+				li = post.content
+				
