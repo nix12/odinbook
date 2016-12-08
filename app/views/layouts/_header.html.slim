@@ -1,25 +1,26 @@
-ul.ui.menu.left.aligned.grid
-	- if user_signed_in? || !current_user.nil?
-	  li.item
-	    = link_to 'Profile', user_path(current_user)
-	  li.item
-	    = link_to 'Posts', posts_path
-	  li.item
-	    = link_to 'Friends', '#'
-	  li.ui.simple.dropdown.link.item
-	    = link_to 'Menu', '#'
-	    i.dropdown.icon
-	    ul.menu
-	      li.item 
-	      	= link_to 'Settings', edit_user_registration_path(current_user)
-	      li.item
-	      	= link_to 'About', '#'
-	      li.item
-	        = link_to 'Sign out', destroy_user_session_path, method: :delete
-	- else
-		li.item 
-			= link_to 'Sign up', new_user_registration_path
-		li.item
-			= link_to 'Sign in', new_user_session_path
-		li.item
-			= link_to 'Facebook sign in', user_facebook_omniauth_authorize_path
+ul.ui.menu
+	.right.menu
+		- if user_signed_in? || !current_user.nil?
+		  li.item
+		    = link_to 'Profile', user_path(current_user)
+		  li.item
+		    = link_to 'Posts', posts_path
+		  li.item
+		    = link_to 'Friends', '#'
+		  li.ui.simple.dropdown.link.item
+		    = link_to 'Menu', '#'
+		    i.dropdown.icon
+		    ul.menu
+		      li.item 
+		      	= link_to 'Settings', edit_user_registration_path(current_user)
+		      li.item
+		      	= link_to 'About', '#'
+		      li.item
+		        = link_to 'Sign out', destroy_user_session_path, method: :delete
+		- else
+			li.item 
+				= link_to 'Sign up', new_user_registration_path
+			li.item
+				= link_to 'Sign in', new_user_session_path
+			li.item
+				= link_to 'Facebook sign in', user_facebook_omniauth_authorize_path
