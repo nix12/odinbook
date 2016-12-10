@@ -3,7 +3,9 @@ Rails.application.routes.draw do
                                     :registrations => 'registrations'}
   root 'static_pages#home'
   resources :users, only: [:show]
-  resources :posts, only: [:create, :destroy, :index]
+  resources :posts, only: [:create, :destroy, :index] do
+    resources :comments, only: [:index, :create, :destroy]
+  end
   
   
   # The priority is based upon order of creation: first created -> highest priority.

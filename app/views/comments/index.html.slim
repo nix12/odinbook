@@ -1,0 +1,24 @@
+h1.center Comments(#{@post.comments.count})
+
+.ui.grid
+	.four.wide.column
+	.eight.wide.column
+		ul.left.aligned.grid
+			.center = paginate @comments
+			- @comments.each do |comment|
+				.ui.raised.segment
+					li = "#{ comment.user.first_name } #{ comment.user.last_name }"
+					li = comment.content
+			.center = paginate @comments
+
+.ui.grid
+	.four.wide.column
+	.eight.wide.column
+		.left.aligned.grid
+			= form_for @comment, url: post_comments_path, method: :post do |f|
+				= f.label :comment, class: 'center'
+				br
+				= f.text_area :content, rows: "6", cols: "57"
+				= f.hidden_field :post_id, value: @post.id
+				br
+				= f.submit 'Leave comment', class: 'fluid ui button primary'
