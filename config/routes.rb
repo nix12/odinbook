@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { :omniauth_callbacks => "users/omniauth_callbacks",
                                     :registrations => 'registrations'}
   root 'static_pages#home'
-  resources :users, only: [:show]
+  resources :users, only: [:show, :index]
   resources :posts, only: [:create, :destroy, :index] do
     resources :likes,only: [:create]
     resources :comments, only: [:index, :create, :destroy]

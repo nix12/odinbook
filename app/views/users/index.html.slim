@@ -1,0 +1,7 @@
+.ui.grid
+	.four.wide.column
+	.eight.wide.column
+		ul
+			- @users.each do |user|
+				.ui.raised.segment
+					li = link_to "#{ user.first_name.capitalize } #{ user.last_name.capitalize }", user_path(user)

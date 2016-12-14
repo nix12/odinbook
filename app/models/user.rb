@@ -39,4 +39,12 @@ class User < ActiveRecord::Base
   def feed
     Post.where('user_id = ?', id).order(created_at: :desc)
   end
+
+  def self.search(search)
+    if search
+      where('last_name LIKE ? OR first_name LIKE ?', "%#{search}%", "%#{search}%")
+    else
+      all
+    end
+  end
 end

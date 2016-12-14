@@ -1,22 +1,29 @@
 ul.ui.menu
 	.right.menu
 		- if user_signed_in? || !current_user.nil?
-		  li.item
-		    = link_to 'Profile', user_path(current_user)
-		  li.item
-		    = link_to 'Posts', posts_path
-		  li.item
-		    = link_to 'Friends', '#'
-		  li.ui.simple.dropdown.link.item
-		    = link_to 'Menu', '#'
-		    i.dropdown.icon
-		    ul.menu
-		      li.item 
-		      	= link_to 'Settings', edit_user_registration_path(current_user)
-		      li.item
-		      	= link_to 'About', '#'
-		      li.item
-		        = link_to 'Sign out', destroy_user_session_path, method: :delete
+			li.ui.category.search.item
+				.ui.transparent.icon.input
+					= form_tag users_path, method: :get do
+						= text_field_tag :search, params[:search], class: 'prompt', placeholder: 'Search for user...'
+						= submit_tag 'Search', name: nil
+			li.item
+				= link_to 'Profile', user_path(current_user)
+			li.item
+				= link_to 'Wall', posts_path
+			li.item
+				= link_to 'Users', users_path
+			li.item
+				= link_to 'Friends', '#'
+			li.ui.simple.dropdown.link.item
+				= link_to 'Menu', '#'
+				i.dropdown.icon
+				ul.menu
+					li.item 
+						= link_to 'Settings', edit_user_registration_path(current_user)
+					li.item
+						= link_to 'About', '#'
+					li.item
+						= link_to 'Sign out', destroy_user_session_path, method: :delete
 		- else
 			li.item 
 				= link_to 'Sign up', new_user_registration_path
