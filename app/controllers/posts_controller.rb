@@ -5,19 +5,25 @@ class PostsController < ApplicationController
 	end
 
 	def create
+		@feed_items = current_user.feed.page(params[:page]).per(10)
 		@post = current_user.posts.build(post_params)
 
 		if @post.save
-			flash[:success] = 'Post successful'
+			flash.now[:success] = 'Post successful'
 			redirect_to user_path(current_user)
 		else
-			flash[:error] = 'Post unsuccessful'
-			redirect_to user_path(current_user)
+			flash.now[:error] = 'Post unsuccessful'
+			render 'users/show'
 		end
 	end
 
 	def destroy
-		
+		@post = Post.find(params[:id])
+		if @post.present?
+			@post.destroy
+		end
+		flash[:success] = 'Post deleted.'
+		redirect_to user_path(current_user)
 	end
 
 	private

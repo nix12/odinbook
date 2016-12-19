@@ -9,11 +9,13 @@ html
   body
     = render 'layouts/header'
     
-    = render 'shared/error_messages'
+    .ui.container
+      = render 'shared/flash_messages'
+      / = render 'shared/error_messages'
 
-    p.notice
-      = notice
-    p.alert
-      = alert
-      
-    = yield
+      p.notice
+        = notice
+      p.alert
+        = alert
+        
+      = yield

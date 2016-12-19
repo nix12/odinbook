@@ -1,6 +1,8 @@
 = form_for @post, url: posts_path, method: :post do |f|
+	= render 'shared/error_messages', object: f.object
 	.field.six.wide.column
 		= f.label :post
-		= f.text_area :content, rows: 6, placeholder: 'Write something'
+		br
+		= f.text_area :content, rows: 6, cols: 35, placeholder: 'Write something'
 
 	= f.submit 'Post', class: 'ui primary basic button'

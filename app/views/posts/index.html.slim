@@ -8,7 +8,9 @@
 					= link_to post_comments_path(post) do
 						li = "Post by #{ post.user.first_name } #{ post.user.last_name } #{time_ago_in_words(post.created_at) }"
 						li = post.content
-						li = "#{ post.likes.count } Likes"
+						li = "#{ pluralize(post.likes.count, 'Like') }"
+						/ - if current_user.id == post.user_id
+						/ 	= link_to 'Delete', post, method: :delete
 				#likes_form
 					- if current_user.likes.find_by(post_id: post)
 						= form_for :likes do |f|
@@ -17,7 +19,3 @@
 						= form_for [post, post.likes.new] do |f|
 							= f.hidden_field :post_id, value: post.id
 							= f.submit 'Like', class: 'ui primary button'
-
-				/ form action=post_likes_path
-				/ 	input type='hidden' name='liked' value=post.id
-				/ 	input type='submit' name='like' value='Like'2
