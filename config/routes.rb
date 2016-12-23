@@ -2,11 +2,16 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { :omniauth_callbacks => "users/omniauth_callbacks",
                                     :registrations => 'registrations'}
   root 'static_pages#home'
-  resources :users, only: [:show, :index]
+  resources :users, only: [:show, :index] do
+    member do
+      get :friends
+    end    
+  end
   resources :posts, only: [:create, :destroy, :index] do
     resources :likes,only: [:create]
     resources :comments, only: [:index, :create, :destroy]
   end
+  resources :friendships, only: [:create, :update, :destroy, :index]
   
   
   # The priority is based upon order of creation: first created -> highest priority.

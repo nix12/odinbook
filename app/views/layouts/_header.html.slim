@@ -1,6 +1,8 @@
 ul.ui.menu
 	.right.menu
 		- if user_signed_in? || !current_user.nil?
+			li.item
+				h3 = "Signed in as #{ current_user.first_name.capitalize } #{ current_user.last_name.capitalize }"
 			li.ui.category.search.item
 				.ui.transparent.icon.input
 					= form_tag users_path, method: :get do
@@ -13,7 +15,7 @@ ul.ui.menu
 			li.item
 				= link_to 'Users', users_path
 			li.item
-				= link_to 'Friends', '#'
+				= link_to 'Friends', friends_user_path(current_user)
 			li.ui.simple.dropdown.link.item
 				= link_to 'Menu', '#'
 				i.dropdown.icon

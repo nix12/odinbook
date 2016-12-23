@@ -4,4 +4,7 @@
 		ul
 			- @users.each do |user|
 				.ui.raised.segment
-					li = link_to "#{ user.first_name.capitalize } #{ user.last_name.capitalize }", user_path(user)
+					li = link_to "#{ user.first_name.capitalize } #{ user.last_name.capitalize }", user_path(user) 
+					| 
+					- if !current_user.friends.include?(user)
+						= link_to 'Add Friend', friendships_path(friend_id: user), method: :post

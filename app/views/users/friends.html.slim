@@ -1,0 +1,12 @@
+h1.center Friends
+ul 
+	- current_user.friends.each do |friend|
+		li = link_to"#{friend.first_name.capitalize} #{friend.last_name.capitalize}", user_path(friend)
+	end
+
+h1.center Pending
+ul
+	- current_user.requested_friendships.each do |request|
+		li = request.first_name
+		li = link_to 'Accept', friendship_path(user_id: request.id), method: "put"
+		li = link_to 'Decline', friendship_path(friend_id: request.id), method: :delete

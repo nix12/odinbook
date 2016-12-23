@@ -1,0 +1,11 @@
+ul
+	- current_user.requested_friendships.each do |request|
+		li = request.first_name
+		li = link_to 'Accept', friendship_path(id: request.id), method: "put"
+		li = link_to 'Decline', friendship_path(id: request.id), method: :delete
+
+ul
+	- current_user.pending_friends.each do |request|
+		li = request.first_name
+		li = link_to 'Accept', friendship_path(id: request.id), method: "put"
+		li = link_to 'Decline', friendship_path(id: request.id), method: :delete
