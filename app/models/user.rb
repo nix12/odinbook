@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
   has_many :comments
   has_many :likes, through: :likes
   has_many :likes
+  has_many :notifications, foreign_key: :recipient_id
   has_many :received_friendships, class_name: 'Friendship', foreign_key: 'friend_id'
   has_many :friendships
   
@@ -65,5 +66,10 @@ class User < ActiveRecord::Base
 
   def pending
     pending_friends | requested_friendships
+  end
+
+  after_create :send_welcome_email
+  def send_welcome_email
+    UserMailer.send_welcome_email(self).deliver
   end
 end

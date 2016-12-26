@@ -1,5 +1,6 @@
 .ui.grid
 	.four.wide.column
+		h1 = "#{ @user.first_name } #{ @user.last_name }"
 	.wall.six.wide.column
 		.center.aligned = paginate @feed_items
 		= render 'shared/wall'

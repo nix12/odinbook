@@ -9,4 +9,9 @@ class UsersController < ApplicationController
 		@posts = @user.posts.each
 		@feed_items = @user.feed.page(params[:page]).per(10)
 	end
+
+	def friends
+		@notification = Notification.where('recipient_id = ?', params[:id])
+		@notification.update_all(checked: true)
+	end
 end

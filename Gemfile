@@ -33,6 +33,8 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'kaminari'
 gem 'thor', '0.19.1'
+gem 'paperclip'
+gem 'letter_opener'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

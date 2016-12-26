@@ -1,12 +1,10 @@
-class FriendshipsController < ApplicationController
-	def index
-		@friendships = current_user.friendships.all
-	end
-
+class FriendshipsController < ApplicationController                   
 	def create
 		@friendship = current_user.friendships.build(friend_id: params[:friend_id])
 	
 		if @friendship.save
+			Notification.create(recipient_id: @friendship.friend_id, checked: false)
+
 			flash[:success] = 'Added friend'
 			redirect_to user_path(current_user)
 		else
@@ -16,8 +14,8 @@ class FriendshipsController < ApplicationController
 	end
 
 	def update
-		# raise params[:id].inspect
-    @friendship = Friendship.find(params[:user_id])
+    @friendship = Friendship.find(params[:id])
+    # raise @friendship.inspect
     @friendship.update(accepted: true)
     
     if @friendship.save
@@ -31,7 +29,6 @@ class FriendshipsController < ApplicationController
 		@friendship = Friendship.select(:id).where('user_id = ? AND friend_id = ?', 
 																								params[:friend_id].to_i, 
 																								current_user.id).first
-		# raise params[:friend_id].to_i.inspect
 		@friendship.destroy
 		flash[:notice] = 'Friend removed'
 		redirect_to user_path(current_user)

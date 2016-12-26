@@ -15,7 +15,7 @@ ul.ui.menu
 			li.item
 				= link_to 'Users', users_path
 			li.item
-				= link_to 'Friends', friends_user_path(current_user)
+				= link_to "Friends (#{ current_user.notifications.unchecked.count})", friends_user_path(current_user)
 			li.ui.simple.dropdown.link.item
 				= link_to 'Menu', '#'
 				i.dropdown.icon
