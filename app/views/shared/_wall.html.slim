@@ -4,6 +4,7 @@ ul
 			= link_to post_comments_path(post) do
 				li = "Posted by #{post.user.first_name.capitalize} #{post.user.last_name.capitalize} #{time_ago_in_words(post.created_at) }"
 				li = post.content
+				li = image_tag post.image.url(:medium) if post.image?
 				- if current_user.id == post.user_id
 					= link_to 'Delete', post, method: :delete
 				

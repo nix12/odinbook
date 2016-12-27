@@ -5,6 +5,7 @@ class PostsController < ApplicationController
 	end
 
 	def create
+		@user = current_user
 		@feed_items = current_user.feed.page(params[:page]).per(10)
 		@post = current_user.posts.build(post_params)
 
@@ -29,6 +30,6 @@ class PostsController < ApplicationController
 	private
 
 		def post_params
-			params.require(:post).permit(:content)
+			params.require(:post).permit(:content, :image)
 		end
 end

@@ -35,6 +35,7 @@ gem 'kaminari'
 gem 'thor', '0.19.1'
 gem 'paperclip'
 gem 'letter_opener'
+gem 'aws-sdk'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

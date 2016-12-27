@@ -6,11 +6,12 @@
 			- @posts.each do |post|
 				.ui.raised.segment
 					= link_to post_comments_path(post) do
-						li = "Post by #{ post.user.first_name } #{ post.user.last_name } #{time_ago_in_words(post.created_at) }"
+						li = "Post by #{ post.user.first_name.capitalize } #{ post.user.last_name.capitalize } #{time_ago_in_words(post.created_at) }"
 						li = post.content
+						li = image_tag post.image.url(:medium) if post.image?
 						li = "#{ pluralize(post.likes.count, 'Like') }"
-						/ - if current_user.id == post.user_id
-						/ 	= link_to 'Delete', post, method: :delete
+						- if current_user.id == post.user_id
+							= link_to 'Delete', post, method: :delete
 				#likes_form
 					- if current_user.likes.find_by(post_id: post)
 						= form_for :likes do |f|
