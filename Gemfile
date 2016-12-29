@@ -36,6 +36,7 @@ gem 'thor', '0.19.1'
 gem 'paperclip'
 gem 'letter_opener'
 gem 'aws-sdk'
+gem	'fog'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
