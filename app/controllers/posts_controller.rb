@@ -1,6 +1,13 @@
 class PostsController < ApplicationController
 	def index
-		@posts = current_user.posts.order(created_at: :desc).page(params[:page]).per(20)
+		# ids = User.pluck(:id).where('id IN ?', current_user.friends)
+		ids = current_user.friends.map do |friend|
+			p friend.id
+		end
+		ids << current_user.id
+		# raise ids.inspect
+		@posts = Post.where(user_id: ids).order(created_at: :desc).page(params[:page]).per(20)
+		# @posts = current_user.posts.order(created_at: :desc).page(params[:page]).per(20)
 		@post = Post.new
 	end
 
@@ -30,7 +37,6 @@ class PostsController < ApplicationController
 	private
 
 		def post_params
-			params.require(:post).permit(:content, 
-				:image)
+			params.require(:post).permit(:content, :image)
 		end
 end

@@ -8,5 +8,5 @@ h1.center Pending
 ul
 	- current_user.requested_friendships.each do |request|
 		li = link_to "#{request.first_name.capitalize} #{request.last_name.capitalize}", user_path(request)
-		li = link_to 'Accept', friendship_path(user_id: request.id), method: "put"
+		li = link_to 'Accept', friendship_path(friend_id: request.id),method: "put"
 		li = link_to 'Decline', friendship_path(friend_id: request.id), method: :delete

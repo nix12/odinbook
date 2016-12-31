@@ -14,7 +14,9 @@ class FriendshipsController < ApplicationController
 	end
 
 	def update
-    @friendship = Friendship.find(params[:id])
+    @friendship = Friendship.where('friend_id = ? AND user_id = ?', current_user.id, params[:friend_id].to_i).first
+    # @friendship = Friendship.find(params[:id])
+    # raise params[:friend_id].inspect
     # raise @friendship.inspect
     @friendship.update(accepted: true)
     
