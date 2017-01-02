@@ -37,6 +37,7 @@ gem 'paperclip', '~> 5.0.0'
 gem 'letter_opener'
 gem 'aws-sdk', '~> 2.3'
 gem	'faker'
+gem 'puma', group: :production
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
