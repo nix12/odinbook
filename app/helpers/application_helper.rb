@@ -6,4 +6,9 @@ module ApplicationHelper
 		when 'notice' then 'ui blue message'
 		end
 	end
+
+	def full_name(object)
+    object.first_name.capitalize + ' ' + object.last_name.capitalize
+  end
+  
 end

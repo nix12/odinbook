@@ -1,13 +1,8 @@
 class PostsController < ApplicationController
 	def index
-		# ids = User.pluck(:id).where('id IN ?', current_user.friends)
-		ids = current_user.friends.map do |friend|
-			p friend.id
-		end
-		ids << current_user.id
-		# raise ids.inspect
-		@posts = Post.where(user_id: ids).order(created_at: :desc).page(params[:page]).per(20)
-		# @posts = current_user.posts.order(created_at: :desc).page(params[:page]).per(20)
+
+		
+		@posts = Post.where(user_id: wall_ids).order(created_at: :desc).page(params[:page]).per(20)
 		@post = Post.new
 	end
 
@@ -17,7 +12,6 @@ class PostsController < ApplicationController
 		@post = current_user.posts.build(post_params)
 
 		if @post.save
-			flash.now[:success] = 'Post successful'
 			redirect_to user_path(current_user)
 		else
 			flash.now[:error] = 'Post unsuccessful'
@@ -38,5 +32,14 @@ class PostsController < ApplicationController
 
 		def post_params
 			params.require(:post).permit(:content, :image)
+		end
+
+		def wall_ids
+			ids = current_user.friends.map do |friend|
+				p friend.id
+			end
+			ids << current_user.id
+
+			return ids
 		end
 end

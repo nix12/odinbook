@@ -2,7 +2,7 @@ ul.ui.menu
 	.right.menu
 		- if user_signed_in? || !current_user.nil?
 			li.item
-				h3 = "Signed in as #{ current_user.first_name.capitalize } #{ current_user.last_name.capitalize }"
+				h3 = "Signed in as #{ full_name(current_user) }"
 			li.ui.category.search.item
 				.ui.transparent.icon.input
 					= form_tag users_path, method: :get do
